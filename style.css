@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1{
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.split{
+    position: absolute;
+    padding-top: 10%;
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 1.5s ease;
+}
+
+.split.left{
+    background: url(img/ps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+}
+
+.split.right{
+    background: url(img/xbox.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    padding: 25px 80px;
+    transition: all .3s ease;
+}
+
+.btn.R:hover{
+    background-color: #0e7a0d;
+    border: 3px solid #0e7a0d;
+}
+.btn.L:hover{
+    background-color: #665cbe;
+    border: 3px solid #665cbe;
+}
